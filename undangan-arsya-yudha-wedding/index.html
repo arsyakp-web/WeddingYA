@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arsya & Yudha — Wedding Invitation</title>
+<meta name="description" content="The Wedding of Arsya Khania Putri & Yudha Trio Al Hadidd">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f7f1e5;--cream:#fffaf0;--sage:#75836b;--green:#263f34;--wine:#6b2735;--brown:#735846;--gold:#b89b68;--ink:#302a27}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Montserrat,sans-serif;font-weight:300}body.lock{overflow:hidden}
+h1,h2,h3,.serif{font-family:"Cormorant Garamond",serif}.serif{font-size:28px}
+section{padding:90px 20px}.wrap{max-width:1000px;margin:auto}
+.cover{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 20%,#fff 0,transparent 30%),radial-gradient(circle at 85% 80%,#dfe7da 0,transparent 35%),var(--ivory)}
+.cover:before,.cover:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(107,39,53,.18);border-radius:50%;transform:rotate(25deg)}.cover:before{left:-260px;top:-140px}.cover:after{right:-270px;bottom:-180px;transform:rotate(-25deg)}
+.cover-card{z-index:2;width:min(760px,92%);padding:58px 25px;border:1px solid rgba(184,155,104,.5);background:rgba(255,250,240,.38);backdrop-filter:blur(2px)}
+.eyebrow,.label,.small{font-size:10px;letter-spacing:4px;text-transform:uppercase}.eyebrow,.small{color:var(--wine)}
+.cover h1{font-size:clamp(62px,12vw,112px);line-height:.8;margin:28px 0 18px;color:var(--green);font-weight:500}.amp{color:var(--wine);font-size:.55em}
+.cover-date{font-size:12px;letter-spacing:3px}.open-btn,.btn{display:inline-block;margin-top:30px;padding:14px 27px;border:1px solid var(--wine);color:var(--wine);text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:10px;background:transparent;cursor:pointer}
+.open-btn:hover,.btn:hover{background:var(--wine);color:white}
+.envelope{position:fixed;inset:0;background:rgba(38,63,52,.98);z-index:100;display:flex;align-items:center;justify-content:center;text-align:center;transition:.8s ease}.envelope.open{opacity:0;pointer-events:none;transform:translateY(-100%)}
+.env-box{width:min(500px,90%);padding:48px 25px;border:1px solid rgba(247,241,229,.4);color:var(--ivory)}.env-box h1{font-size:60px;margin:10px}.env-box p{font-size:11px;letter-spacing:2px;line-height:1.8}.wax{width:58px;height:58px;border-radius:50%;margin:25px auto;background:var(--wine);display:flex;align-items:center;justify-content:center;color:white;font-family:"Cormorant Garamond";font-size:22px}
+.music{position:fixed;right:18px;bottom:18px;z-index:30;width:45px;height:45px;border:1px solid var(--gold);border-radius:50%;background:var(--cream);color:var(--wine);cursor:pointer}.music.spin{animation:spin 3s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.flower{position:absolute;opacity:.5;pointer-events:none;font-size:38px;animation:float 7s ease-in-out infinite}@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-18px) rotate(8deg)}}
+.f1{left:7%;top:18%}.f2{right:8%;top:30%;animation-delay:1s}.f3{left:10%;bottom:15%;animation-delay:2s}.f4{right:10%;bottom:12%;animation-delay:3s}
+.title{text-align:center;margin-bottom:45px}.title h2{font-size:52px;color:var(--green);font-weight:500;margin:8px 0}.quote{text-align:center;max-width:680px;margin:auto;font-family:"Cormorant Garamond";font-size:28px;line-height:1.45;color:var(--brown)}.story{text-align:center;max-width:720px;margin:25px auto;line-height:1.9;font-size:13px}
+.couple{text-align:center}.couple-name{font-family:"Cormorant Garamond";font-size:43px;color:var(--wine);margin:5px}.couple-role{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--sage)}
+.event-grid,.gift,.parents{display:grid;grid-template-columns:1fr 1fr;gap:22px}.event,.bank{padding:35px;text-align:center;border:1px solid rgba(184,155,104,.5);background:rgba(255,250,240,.55)}.event h3,.bank h3{font-size:32px;color:var(--wine);margin:7px 0 14px}.event p,.bank p{font-size:13px;line-height:1.9}.map-btn{color:var(--wine);text-decoration:none;border-bottom:1px solid var(--wine);font-size:10px;letter-spacing:2px;text-transform:uppercase}
+.parents-section{background:var(--green);color:var(--ivory)}.parents-section .title h2,.parents-section .small{color:var(--ivory)}.parent-box{padding:30px;text-align:center;border:1px solid rgba(247,241,229,.2)}.parent-box h3{font-size:32px;color:#eee2cc;margin:8px 0 15px}.parent-box p{font-size:13px;line-height:1.9}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.photo{aspect-ratio:4/5;background:#e9e0cf;border:1px dashed rgba(107,39,53,.35);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--brown);font-size:10px;letter-spacing:1px}.photo img{width:100%;height:100%;object-fit:cover}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:720px;margin:auto}.time{padding:24px 8px;border:1px solid rgba(184,155,104,.5);background:rgba(255,250,240,.5);text-align:center}.time b{font-family:"Cormorant Garamond";font-size:44px;color:var(--green);display:block}.time span{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--brown)}
+.rsvp{max-width:620px;margin:auto}form{display:grid;gap:13px}input,select,textarea{width:100%;padding:14px;border:1px solid rgba(115,88,70,.35);background:rgba(255,255,255,.45);font:13px Montserrat;color:var(--ink);outline:none}textarea{min-height:110px;resize:vertical}button.submit{padding:15px;border:0;background:var(--wine);color:white;font:10px Montserrat;letter-spacing:2px;text-transform:uppercase;cursor:pointer}.account{font-size:20px;letter-spacing:2px;color:var(--wine);margin:12px}.copy{padding:9px 15px;background:transparent;border:1px solid var(--wine);color:var(--wine);font-size:9px;letter-spacing:1px}
+.wa{display:inline-block;margin-top:18px;padding:13px 22px;background:var(--green);color:white;text-decoration:none;font-size:10px;letter-spacing:2px;text-transform:uppercase}
+footer{padding:65px 20px;text-align:center;background:#1d2d26;color:var(--ivory)}footer h2{font-size:52px;color:#eee2cc;margin:0}footer p{font-size:10px;letter-spacing:3px}
+.toast{position:fixed;bottom:75px;left:50%;transform:translateX(-50%);background:var(--green);color:white;padding:12px 18px;font-size:11px;z-index:60;opacity:0;pointer-events:none;transition:.3s}.toast.show{opacity:1}
+@media(max-width:700px){section{padding:70px 18px}.event-grid,.gift,.parents{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.gallery .photo:last-child{grid-column:span 2}.countdown{grid-template-columns:repeat(2,1fr)}.cover-card{padding:45px 18px}}
+</style>
+</head>
+<body class="lock">
+
+<!-- OPENING ENVELOPE -->
+<div class="envelope" id="envelope">
+  <div class="env-box">
+    <div class="eyebrow" style="color:#d9c59b">The Wedding of</div>
+    <h1>Arsya &amp; Yudha</h1>
+    <div class="wax">A&amp;Y</div>
+    <p>Kepada Yth.<br><strong id="guestOpening">Tamu Undangan</strong></p>
+    <button class="open-btn" onclick="openInvitation()">Open Invitation</button>
+  </div>
+</div>
+
+<button class="music" id="musicBtn" title="Music">♪</button>
+<audio id="music" loop preload="none">
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+<div class="toast" id="toast">Berhasil disalin</div>
+
+<header class="cover">
+  <span class="flower f1">❧</span><span class="flower f2">❦</span><span class="flower f3">❧</span><span class="flower f4">❦</span>
+  <div class="cover-card">
+    <div class="eyebrow">The Wedding of</div>
+    <h1>Arsya <span class="amp">&amp;</span> Yudha</h1>
+    <div class="cover-date">13 Maret 2026 · 16.00 WIB · Bloof Cafe</div>
+    <p class="serif">Together with their families, invite you to celebrate their special day.</p>
+    <a class="btn" href="#home">Explore Invitation</a>
+  </div>
+</header>
+
+<main id="home">
+<section>
+  <div class="wrap">
+    <div class="title"><div class="small">With love</div><h2>Assalamu'alaikum</h2></div>
+    <p class="quote">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup...”</p>
+    <p class="story">Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan menjadi bagian dari hari istimewa kami.</p>
+    <div class="couple">
+      <div class="couple-role">Bride</div><div class="couple-name">Arsya Khania Putri</div>
+      <div class="couple-role" style="margin-top:20px">Groom</div><div class="couple-name">Yudha Trio Al Hadidd</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="title"><div class="small">Counting the days</div><h2>Our Special Day</h2></div>
+    <div class="countdown" id="countdown">
+      <div class="time"><b id="days">00</b><span>Days</span></div>
+      <div class="time"><b id="hours">00</b><span>Hours</span></div>
+      <div class="time"><b id="minutes">00</b><span>Minutes</span></div>
+      <div class="time"><b id="seconds">00</b><span>Seconds</span></div>
+    </div>
+    <p class="story" id="countText"></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="title"><div class="small">Save the date</div><h2>Wedding Details</h2></div>
+    <div class="event-grid">
+      <div class="event">
+        <div class="label">Akad Nikah</div><h3>16.00 WIB</h3>
+        <p><strong>Jumat, 13 Maret 2026</strong><br>Bloof Cafe</p>
+        <!-- EDIT LINK GOOGLE MAPS DI SINI -->
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Bloof%20Cafe" target="_blank">View Location</a>
+      </div>
+      <div class="event">
+        <div class="label">Resepsi</div><h3>Coming Soon</h3>
+        <p>Detail waktu dan rangkaian acara dapat kamu tambahkan di bagian ini.</p>
+        <span class="map-btn">Bloof Cafe</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="parents-section">
+  <div class="wrap">
+    <div class="title"><div class="small">The families</div><h2>With our beloved parents</h2></div>
+    <div class="parents">
+      <div class="parent-box"><div class="label">Bride</div><h3>Arsya Khania Putri</h3><p>Putri dari<br><strong>Lilis &amp; Asep</strong></p></div>
+      <div class="parent-box"><div class="label">Groom</div><h3>Yudha Trio Al Hadidd</h3><p>Putra dari<br><strong>A &amp; B</strong></p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="title"><div class="small">Our moments</div><h2>Gallery</h2></div>
+    <div class="gallery">
+      <div class="photo"><img src="assets/photo-1.jpg" onerror="this.style.display='none';this.parentElement.innerHTML='FOTO COUPLE 01<br><small>assets/photo-1.jpg</small>'" alt="Arsya & Yudha"></div>
+      <div class="photo"><img src="assets/photo-2.jpg" onerror="this.style.display='none';this.parentElement.innerHTML='FOTO COUPLE 02<br><small>assets/photo-2.jpg</small>'" alt="Arsya & Yudha"></div>
+      <div class="photo"><img src="assets/photo-3.jpg" onerror="this.style.display='none';this.parentElement.innerHTML='FOTO COUPLE 03<br><small>assets/photo-3.jpg</small>'" alt="Arsya & Yudha"></div>
+      <div class="photo"><img src="assets/photo-4.jpg" onerror="this.style.display='none';this.parentElement.innerHTML='FOTO COUPLE 04<br><small>assets/photo-4.jpg</small>'" alt="Arsya & Yudha"></div>
+      <div class="photo"><img src="assets/photo-5.jpg" onerror="this.style.display='none';this.parentElement.innerHTML='FOTO COUPLE 05<br><small>assets/photo-5.jpg</small>'" alt="Arsya & Yudha"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap rsvp">
+    <div class="title"><div class="small">Kindly respond</div><h2>RSVP</h2></div>
+    <p class="story">Mohon konfirmasi kehadiran agar kami dapat mempersiapkan hari istimewa ini dengan sebaik-baiknya.</p>
+    <!-- Untuk RSVP online: ganti action dengan URL Formspree / endpoint milikmu -->
+    <form action="https://formspree.io/f/ISI_ID_FORM_KAMU" method="POST">
+      <input type="text" name="nama" id="rsvpName" placeholder="Nama lengkap" required>
+      <select name="kehadiran" required><option value="">Konfirmasi kehadiran</option><option>Hadir</option><option>Tidak dapat hadir</option></select>
+      <input type="number" name="jumlah_tamu" min="1" max="10" placeholder="Jumlah tamu">
+      <textarea name="pesan" placeholder="Ucapan untuk kedua mempelai"></textarea>
+      <button class="submit" type="submit">Kirim Konfirmasi</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="title"><div class="small">Stay connected</div><h2>Share Your Love</h2></div>
+    <p class="story">Bagi yang ingin memberikan ucapan atau menghubungi kami secara langsung, silakan gunakan tombol WhatsApp berikut.</p>
+    <!-- EDIT NOMOR WHATSAPP DI HREF -->
+    <div style="text-align:center"><a class="wa" href="https://wa.me/6281234567890?text=Halo%20Arsya%20dan%20Yudha%2C%20selamat%20atas%20pernikahannya!" target="_blank">WhatsApp Us</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="title"><div class="small">Wedding gift</div><h2>Sending Love</h2></div>
+    <div class="gift">
+      <div class="bank"><div class="label">Bank</div><h3>NAMA BANK</h3><div class="account" id="rek1">000000000000</div><p>a.n. Arsya Khania Putri</p><button class="copy" onclick="copyText('rek1')">Copy Number</button></div>
+      <div class="bank"><div class="label">Bank</div><h3>NAMA BANK</h3><div class="account" id="rek2">000000000000</div><p>a.n. Yudha Trio Al Hadidd</p><button class="copy" onclick="copyText('rek2')">Copy Number</button></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><h2>Arsya &amp; Yudha</h2><p>13 · 03 · 2026</p><p id="guestFooter"></p></footer>
+
+<script>
+const targetDate = new Date("2026-03-13T16:00:00+07:00").getTime();
+function pad(n){return String(n).padStart(2,'0')}
+function updateCountdown(){
+  const diff=targetDate-Date.now();
+  if(diff<=0){
+    document.getElementById('days').textContent='♡';document.getElementById('hours').textContent='♡';document.getElementById('minutes').textContent='♡';document.getElementById('seconds').textContent='♡';
+    document.getElementById('countText').textContent='Hari istimewa kita telah tiba. Terima kasih telah menjadi bagian dari cerita Arsya & Yudha.';
+    return;
+  }
+  document.getElementById('days').textContent=Math.floor(diff/86400000);
+  document.getElementById('hours').textContent=pad(Math.floor(diff/3600000)%24);
+  document.getElementById('minutes').textContent=pad(Math.floor(diff/60000)%60);
+  document.getElementById('seconds').textContent=pad(Math.floor(diff/1000)%60);
+}
+setInterval(updateCountdown,1000);updateCountdown();
+
+const params=new URLSearchParams(location.search);
+const guest=params.get('to') || params.get('nama') || 'Tamu Undangan';
+const guestClean=decodeURIComponent(guest.replace(/\+/g,' '));
+document.getElementById('guestOpening').textContent=guestClean;
+document.getElementById('guestFooter').textContent='Kepada: '+guestClean;
+document.getElementById('rsvpName').value=(guestClean!=='Tamu Undangan'?guestClean:'');
+
+function openInvitation(){
+ document.getElementById('envelope').classList.add('open');document.body.classList.remove('lock');
+ const audio=document.getElementById('music'); audio.play().then(()=>document.getElementById('musicBtn').classList.add('spin')).catch(()=>{});
+}
+const music=document.getElementById('music'),musicBtn=document.getElementById('musicBtn');
+musicBtn.onclick=()=>{if(music.paused){music.play();musicBtn.classList.add('spin')}else{music.pause();musicBtn.classList.remove('spin')}};
+function copyText(id){navigator.clipboard.writeText(document.getElementById(id).textContent.trim());const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1600)}
+</script>
+</body>
+</html>
